@@ -25,10 +25,9 @@ describe('Testnumber', () => {
     });
   });
 
-  it('Throws an exception is the value passed is not a number', () => {
+  it('Throws an exception if the value passed is not a number', () => {
     TestNumber.testNumber('error').catch((error) => {
       expect(error).toEqual(new Error('Value is not a number'));
-      done();
     });
   });
 });
